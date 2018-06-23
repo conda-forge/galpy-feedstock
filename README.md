@@ -20,14 +20,16 @@ units.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/galpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/galpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/galpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/galpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/galpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/galpy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/galpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/galpy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/galpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/galpy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/galpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/galpy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/galpy/badges/version.svg)](https://anaconda.org/conda-forge/galpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/galpy/badges/downloads.svg)](https://anaconda.org/conda-forge/galpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-galpy-green.svg)](https://anaconda.org/conda-forge/galpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/galpy.svg)](https://anaconda.org/conda-forge/galpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/galpy.svg)](https://anaconda.org/conda-forge/galpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/galpy.svg)](https://anaconda.org/conda-forge/galpy) |
 
 Installing galpy
 ================
