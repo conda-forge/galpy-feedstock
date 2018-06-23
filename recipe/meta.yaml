@@ -20,17 +20,19 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - python
     - setuptools
-    - numpy >=1.9
+    - numpy
     - scipy
     - matplotlib
     - six
     - gsl
-    - toolchain
   run:
     - python
-    - numpy >=1.9
+    - numpy
     - scipy
     - matplotlib
     - six
