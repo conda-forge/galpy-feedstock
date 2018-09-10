@@ -14,7 +14,10 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt  # [win]
+  script: 
+    - rm gsl-config.bat # [win and py2k]
+    - python setup.py install --single-version-externally-managed --record=record.txt  # [win and py2k]
+  script: python setup.py install --single-version-externally-managed --record=record.txt --no-openmp # [win and py3k]
   script: CPATH="$PREFIX/include:$CPATH" python setup.py install --single-version-externally-managed --record=record.txt --no-openmp  # [osx]
   script: CPATH="$PREFIX/include:$CPATH" python setup.py install --single-version-externally-managed --record=record.txt  # [not win and not osx]
 
