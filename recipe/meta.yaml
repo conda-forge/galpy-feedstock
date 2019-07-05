@@ -1,7 +1,7 @@
 {% set name = "galpy" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "6b3fc29160a55d6022348c9c9d4504cd3ce606725e2a0ee8626e21d01300813a" %}
+{% set hash_value = "ac43051eebe3025ba35cfcae2eaccff9dbcd5764d3c265161881755033f27647" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1001
+  number: 0
   script: 
     - rm gsl-config.bat  # [win and py2k]
     - python setup.py install --single-version-externally-managed --record=record.txt  # [win and py2k]
