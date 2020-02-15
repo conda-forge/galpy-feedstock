@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win and vc<14]
   script: 
     - rm gsl-config.bat  # [win and py2k]
@@ -31,7 +31,7 @@ requirements:
     - setuptools
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - six
     - future
     - gsl
@@ -39,7 +39,7 @@ requirements:
     - python
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - six
     - future
     - gsl
