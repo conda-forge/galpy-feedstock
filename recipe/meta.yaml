@@ -1,21 +1,19 @@
 {% set name = "galpy" %}
-{% set version = "1.5" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "80137c3d1918706c7e93a7a7f8872909295b8d2e93f00a2ab419ab6d6ef58be2" %}
+{% set version = "1.6.0" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: ceac39f6f5d66b30598b5d4b1600257cdb8f37116b49cc5d15f6b9bd677ec10f
 
 build:
-  number: 2
-  skip: True  # [win and vc<14]
-  script: 
+  number: 0
+  skip: true  # [win and vc<14]
+  script:
     - rm gsl-config.bat  # [win and py2k]
     - python setup.py install --single-version-externally-managed --record=record.txt  # [win and py2k]
   script: python setup.py install --single-version-externally-managed --record=record.txt --no-openmp  # [win and py3k]
