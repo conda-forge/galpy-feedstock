@@ -16,7 +16,7 @@ build:
   script:
     - rm gsl-config.bat  # [win and py2k]
     - python setup.py install --single-version-externally-managed --record=record.txt  # [win and py2k]
-  script: python setup.py install --single-version-externally-managed --record=record.txt --no-openmp  # [win and py3k]
+  script: python setup.py install --single-version-externally-managed --record=record.txt --no-openmp  # [win and py>=3.6]
   script: CPATH="$PREFIX/include:$CPATH" python setup.py install --single-version-externally-managed --record=record.txt --no-openmp  # [osx]
   script: CPATH="$PREFIX/include:$CPATH" python setup.py install --single-version-externally-managed --record=record.txt  # [not win and not osx]
 
@@ -48,7 +48,7 @@ test:
 
 about:
   home: http://github.com/jobovy/galpy
-  license: BSD 3-clause
+  license: BSD-3-clause
   license_family: BSD
   license_file: LICENSE
   summary: Galactic Dynamics in python
