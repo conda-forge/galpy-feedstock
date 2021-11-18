@@ -3,7 +3,7 @@ About galpy
 
 Home: http://github.com/jobovy/galpy
 
-Package license: BSD 3-clause
+Package license: BSD-3-clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/galpy-feedstock/blob/master/LICENSE.txt)
 
