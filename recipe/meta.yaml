@@ -1,5 +1,5 @@
 {% set name = "galpy" %}
-{% set version = "1.7.2" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4011b57b427d791addd8201754989a8f08d46925ee81cd571473d414ee38c04a
+  sha256: a69f4a98a9a094ee5eda8acb2f5c7b3a786388d089423a214ab3b290fceddb53
 
 build:
   number: 0
@@ -33,16 +33,13 @@ requirements:
     - numpy
     - scipy
     - matplotlib-base
-    - six
-    - future
     - gsl
   run:
     - python
+    - setuptools
     - numpy
     - scipy
     - matplotlib-base
-    - six
-    - future
     - gsl
 
 test:
