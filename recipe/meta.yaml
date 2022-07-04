@@ -33,16 +33,13 @@ requirements:
     - numpy
     - scipy
     - matplotlib-base
-    - six
-    - future
     - gsl
   run:
     - python
+    - setuptools
     - numpy
     - scipy
     - matplotlib-base
-    - six
-    - future
     - gsl
 
 test:
