@@ -34,14 +34,14 @@ requirements:
     - numpy
     - scipy
     - matplotlib-base
-    - gsl
+    - conda-forge::gsl
   run:
     - python
     - packaging
     - numpy
     - scipy
     - matplotlib-base
-    - gsl
+    - conda-forge::gsl
 
 test:
   imports:
