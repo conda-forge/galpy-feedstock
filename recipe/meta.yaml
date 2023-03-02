@@ -1,5 +1,5 @@
 {% set name = "galpy" %}
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9e2b55e50aab4aa7f4313ab9c333ac4512a4338e8d111fce5f6c14456ea53a07
+  sha256: d02e79a4f95a94466b2e7fd511db95e13aaf3e7eb9a8e76ec99e1aabd62ff065
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and vc<14]
   script:
     - rm gsl-config.bat  # [win and py2k]
