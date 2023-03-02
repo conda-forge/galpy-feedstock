@@ -1,11 +1,11 @@
-About galpy
-===========
+About galpy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/galpy-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/jobovy/galpy
 
 Package license: BSD-3-clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/galpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Galactic Dynamics in python
 
