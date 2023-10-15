@@ -11,7 +11,7 @@ source:
   sha256: f454259f1cb77c3c21265e0214b7dfecdde1486d59318d3b65dba912f4d77128
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
   script:
     - rm gsl-config.bat  # [win and py2k]
