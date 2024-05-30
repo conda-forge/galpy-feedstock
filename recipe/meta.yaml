@@ -11,7 +11,7 @@ source:
   sha256: cf13e166b046e07cdcc663acf5412dd2f2649a5ae06985ee040f109325a92e5a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
   script:
     - rm gsl-config.bat  # [win and py2k]
@@ -26,6 +26,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
