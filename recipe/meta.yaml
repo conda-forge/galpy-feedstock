@@ -1,5 +1,5 @@
 {% set name = "galpy" %}
-{% set version = "1.10.1" %}
+{% set version = "1.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a674b9e38b2188efa716b34a4ab49035396049a2523166dcd1f0ffe068753067
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2fe2594f91856b2e6df58a71ac6ccb3102a6bd772fa147de56fc371031af5d42
 
 build:
   number: 0
