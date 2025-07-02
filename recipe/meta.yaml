@@ -16,8 +16,8 @@ build:
   script:
     - rm gsl-config.bat  # [win and py2k]
     - python setup.py install --single-version-externally-managed --record=record.txt  # [win and py2k]
-  script: python setup.py install --single-version-externally-managed --record=record.txt --no-openmp  # [win and py>=3.6]
-  script: CPATH="$PREFIX/include:$CPATH" python setup.py install --single-version-externally-managed --record=record.txt --no-openmp  # [osx]
+  script: GALPY_COMPILE_NO_OPENMP=1 python setup.py install --single-version-externally-managed --record=record.txt  # [win and py>=3.6]
+  script: CPATH="$PREFIX/include:$CPATH" GALPY_COMPILE_NO_OPENMP=1 python setup.py install --single-version-externally-managed --record=record.txt  # [osx]
   script: CPATH="$PREFIX/include:$CPATH" python setup.py install --single-version-externally-managed --record=record.txt  # [not win and not osx]
 
 requirements:
