@@ -7,11 +7,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 368c3b6a8ca7d93e44df40887ac6b9d9a00fa3a0f2ce532d9b6dac1a43ac7612
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win and vc<14]
   script:
     - rm gsl-config.bat  # [win and py2k]
